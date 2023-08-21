@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hi, gamer!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/5eb051a70c.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="">
+<header>
+<!-----------------------------------------------------------------Aqui é o cabeçalho do projeto, barra de navegação, titúlo e subtítulo -------------------------------------------------------->
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand mb-1" href="#" onclick="recarregarpag()">Best Games</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#scrollspyHeading4">Página Inicial</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plataformas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading1">Nitendo</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading2">Playstation 1</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Playstation 2</a></li>
+            </ul>
+          </li>
+        </ul>
+        <nav class="col-1" style="display: flex;justify-content: space-between;">
+          <a href="https://www.linkedin.com/in/giulian-bastos-503312226/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #1c6efd;"></i></a>
+          <a href="https://github.com/giulianfabio" target="_blank"><i class="fa-brands fa-xl fa-github" style="color: #1866ec;"></i></a>
+          <a href="https://twitter.com/BastosGiulian" target="_blank"><i class="fa-brands fa-xl fa-x-twitter" style="color: #035efc;"></i></a>
+        </nav>
+         
+        
+      </div>
+    </div>
+  </nav>
+<!----------------------------------------------------------------- titúlo--------------------------------------------------------------------------------------------------------------------->
+  <h1 class="text-center mt-2" id="scrollspyHeading4">Hello, Gamer!</h1>
+<!-----------------------------------------------------------------subtítulo ------------------------------------------------------------------------------------------------------------------>
+  <h3 class="text-center  mb-5 mt-5">Quem nunca sentiu uma certa sensação de que aquele tempo não voltaria mais?<br>
+    <small class="text-body-secondary">Estou aqui para te lembrar alguns dos melhores games já criados de todos os tempos e trazer o velho sentimento de nolstalgia que sempre tive com eles. </small>
+    </h3>
+
+    <audio src="Super-Mario.mp3" id="mario" loop></audio>
+    <div class="text-center">
+      <h1 class="text-center mt-2">Lets, Play.</h1>
+            <button type="action" class="btn btn-outline-info mb-4 text-center" onclick="marioplay()"><i class="fa-solid fa-play"></i></button>
+            <button type="action" class="btn btn-outline-info mb-4 text-center" onclick="mariopause()"><i class="fa-solid fa-pause"></i></button>
+          </div>
+    <!-----------------------------------------------------------------Aqui é o fim do cabeçalho do projeto, barra de navegação, titúlo e subtítulo ----------------------------------------------------->
+</header>
+<!-----------------------------------------------------------------Aqui é projeto principal, Scrollspy ,footer ----------------------------------------------------------------------------------->
+
+<!-----------------------------------------------------------------Aqui é  Scrollspy ------------------------------------------------------------------------------------------------------------->
+<main>
+<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3"data-bs-theme="dark">
+      <a class="navbar-brand" href="#">Games por plataforma</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">Nitendo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Playstation</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading2">Playstation 1</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Playstation 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+
+    <div class="text-bg-info-emphasis" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" data-bs-theme="dark" >
+      
+      <h3 class="text-center  mb-4 mt-4"id="scrollspyHeading1">Nitendo<br>
+        <small class="text-body-dark ">A Nitendo é porte de grandes jogos marcados na infancia, quem nunca jogou Mario que atire a primeira pedra, ou o aventureiro zelda em uma grande aventura.<br>
+          Eis aqui os 3 principais jogos que tive a chance de jogar e tornaram a minha infancia especial: </small>
+          
+        </h3>
+
+        <ol class="list-group">
+
+          <li class="list-group-item d-flex justify-content-between align-items-start ">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center mt-4 mb-4">1.Super Mario</div>
+              
+      <div class="card-group text-center">
+      <div class="card ms-4">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/2/2e/New_Super_Mario_Bros._-_Norh-american_cover.jpg" class="card-img-top" 
+        height="400px" width="100%">
+        <div class="card-body">
+          <h5 class="card-title">Super Mario-Nitendo DS</h5>
+          <p class="card-text">Um mundo maravilhoso, sempre um prazer salvar a princesa...só não contava com os obstáculos.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card ms-4">
+        <img src="https://art.pixilart.com/f8da8fb7d2d8.gif" class="card-img-top" 
+        height="400px" width="100%">
+        <div class="card-body">
+          <h5 class="card-title">Gameplay</h5>
+          <p class="card-text">A jogabilidade sempre foi simples e prazerosa, pular e abaixar sempre foram tão legais, não precisava ser um especialista para jogar
+            Mario e isso sempre foi íncrivel.<br><br>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card ms-4">
+        <img src="https://portalpopline.com.br/wp-content/uploads/2023/02/super-mario-bros-o-filme-carnaval-salvador.jpg" class="card-img-top" height="400px" width="100%" >
+        <div class="card-body">
+          <h5 class="card-title">Filme</h5>
+          <p class="card-text">Acredito que são poucos filmes que conseguem transmitir a mensagem de um jogo, porém Mario é um deles.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+              
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center mt-4 mb-4">2.Pokemon</div>
+             
+              <div class="card-group text-center">
+                <div class="card ms-4">
+                  <img src="https://static21.minhalojanouol.com.br/videogameportoalegre/produto/20210527171129_3882996118_D.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Pokemon-Nitendo DS</h5>
+                    <p class="card-text">Nolstalgia....se fosse uma palavra que definisse o que penso a respeito desse jogo
+                      , foram inúmeras vezes jogando na casa de um amigo e batalhando dentro do jogo com pokemons.
+                    </p>
+                    
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://thumbs.gfycat.com/ApprehensiveFoolhardyFinwhale-size_restricted.gif" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Gameplay</h5>
+                    <p class="card-text">As batalhas sempre foram emocionantes e empolgantes, era basicamente dano contra defesa, uma conta matemática que quem tem mais é o vencedor.
+                      <audio src="https://open.spotify.com/intl-pt/track/2o7zYsFCKirT6JaFJ4oXRy?si=52a3f805eda94a5c"></audio> 
+                    </p>
+                    
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://observatoriodegames.uol.com.br/wp-content/uploads/2021/05/enter-pikachu-pokmon-journeys-the-series-episode-1-22-39-screenshot_feature-1024x576.png" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Animação</h5>
+                    <p class="card-text">Seja pela série ou filmes, foram a porta de entrada de várias pessoas pra o mundo dos pokemons dentro dos games.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center mt-4 mb-4">3.Zelda </div>
+              <div class="card-group text-center">
+                <div class="card ms-4">
+                  <img src="https://bdjogos.com.br/capas/3781-The-Legend-of-Zelda-A-Link-Between-Worlds-Nintendo-3DS-capa-1.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Zelda: A link between worlds-Nitendo DS</h5>
+                    <p class="card-text">"A Link Between Worlds possui um grande foco no combate, mais do que em quebra-cabeças e int
+                      eração com personagens, o que o torna um jogo bem agradável para um portátil e mais emocionante que os capítulos recentes da série"<br>Techtudo reviews.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://media.tenor.com/_G1OCp9H2AYAAAAC/a-link-between-worlds-zelda.gif" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Gameplay</h5>
+                    <p class="card-text">"Concentram na jogabilidade envolvente em vez de depender de gráficos sofisticados. Com suas masmor
+                      ras bem projetadas (e ambientes labirínticos), combate divertido, quebra-cabeças"<br>
+                      Common Sense Media</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://s2.glbimg.com/sdDtPw5sw0oqdV0leQbV3qxo5_U=/0x0:620x388/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/o/1/8bgfLHRmawJt9wlQXbSA/glbimg.com-po-tt-f-620x388-2013-12-03-legend-of-zelda-link-between-worlds-nintendo-3ds-combate.jpg" class="card-img-top" 
+                 height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Review IGN</h5>
+                    <p class="card-text">"Between Worlds é uma experiência poderosamente nostálgica para qualquer pessoa com lembranças de The Legend of Zelda
+                      : A Link to the Past, mas também é um jogo excepcional por si só.."<br>
+                    IGN</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+
+        </ol>
+
+        <h3 class="text-center  mb-4 mt-4" id="scrollspyHeading2">Playstation 1<br>
+          <small class="text-body-dark ">O primeiro video-game nunca esquecemos, aquela sensação de descobrimento, alegria e prazer nos primeiros jogos marcam.<br>
+            Eis aqui os primeiros jogos que joguei na minha vida:</small>
+          </h3>
+
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center  mt-4 mb-4">1.Scooby-doo</div>
+
+              
+              <div class="card-group text-center">
+                <div class="card ms-4">
+                  <img src="https://i.ytimg.com/vi/d5kyabpp-XQ/maxresdefault.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Scooby-doo-Playstation 1</h5>
+                    <p class="card-text">Como começar falando dp primeiro video game sem falar sobre o primeiro jogo?
+                      Ajudar a mistério S.A era íncrivel e jogar com o scooby era algo único.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://media.tenor.com/mhXhYE3UBYgAAAAd/scrappy-doo-scooby-doo.gif" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Scooby-Doo and Scrappy-Doo</h5>
+                    <p class="card-text">Esaa é uma das ínumeras séries do scooby doo que estão presentes na vida de cada pessoa dos anos 2000.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://noticiasdatv.uol.com.br/media/uploads/artigos/scooby-doo-2-monstros-a-solta-reproducao-warner-bros..jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Scooby doo 2 monstros a solta</h5>
+                    <p class="card-text">Sabe aquela fase da infancia em que repetimos os mesmos filme? Esse é um deles, com os atrapalhões Scooby e Salsicha
+                      a mistério S.A tenta resolver mais um mistério que assombra a cidade de Coolsville</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center  mt-4 mb-4">2.GTA 1</div>
+              
+              <div class="card-group text-center">
+                <div class="card">
+                  <img src="https://1.bp.blogspot.com/-aptx9NcgRV8/XOLXAiCdvsI/AAAAAAAAo-0/K2O6XqzI-0MDvkaI3r7Uvr687ShMaVAlQCLcBGAs/s640/gtaceW__05681.1472065256.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body ms-4">
+                    <h5 class="card-title ">Gta-Playstation 1</h5>
+                    <p class="card-text">Um jogo com tanta liberdade de escolha, a sensação de poder faria o gta a maior franquia de todos os tempos .</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://i.makeagif.com/media/12-09-2015/eGOYnq.gif" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Gameplay</h5>
+                    <p class="card-text">Jogabilidade complexa para época, o simulador da vida GTA chegava na plataforma do Plastation mudando toda as pespectiva sobre o mundo dos games.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://playminigames.net/content/gameimagecontent/gta_541f0d0ecdd942c1bac3b1dbb2ff7b0a.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">American Life</h5>
+                    <p class="card-text">American life, assaltos, tiros, pessoas, nada faltava nesse jogo que futuramente viraria algo bem mais complexo e arbitrário.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center  mt-4 mb-4">3.Power-rangers </div>
+              
+              <div class="card-group text-center">
+                <div class="card ms-4">
+                  <img src="https://retromtl.com/cdn/shop/products/IMG_4077-2_1024x1024@2x.jpg?v=1629400912" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Power rangers lightspeed rescue- Playstation 1</h5>
+                    <p class="card-text">Quando criança, sempre lembramos deles... cada uma se identificava com seu ranger favorito e qual cor ele possuia</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://media.tenor.com/6eWe9sWUKUcAAAAd/power-rangers-lightspeed-rescue.gif" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Baseado no mundo cinematográfico.</h5>
+                    <p class="card-text">Filme ou série, o jogo transmitia exatamente a chance de jogar com vários rangers de uma vez.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4">
+                  <img src="https://media.alvanista.com/uploads/game/15/10095/medium_1_screenshot.png" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title"><Fieldset>Fases</Fieldset></h5>
+                    <p class="card-text">Lembranças dos elavadores para entrar e mudar de fase além de claro a chance de jogar com seu ranger favorito.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+        </ul>
+       
+        <h3 class="text-center  mb-4 mt-4"id="scrollspyHeading3">Plastation 2<br>
+          <small class="text-body-dark ">Aqui temos o maior console de todas as épocas, no Brasil é impossível não lembrar dos jogos por 10 reais na lojinha vizinha <br>
+            Impossível não lembrar do íconico cj, o bomba patch 100% atualizado e claro, de um Deus da Guerra incontrolável.<br>
+            Eis aqui os melhores jogos que joguei no melhor console de todos os tempos: </small>
+          </h3>
+
+        <ul class="list-group ">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center  mt-4 mb-4">1.God of war 2</div>
+             
+              <div class="card-group text-center" >
+                <div class="card ms-4">
+                  <img src="https://s3-sa-east-1.amazonaws.com/loja2/204f2f354264ec6131da3632d3b32f3a.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">God Of War-Playstation 2</h5>
+                    <p class="card-text">A volta do guerreiro de Esparta, são grandes lembranças desse jogo no qual joguei diversas vezes e é 
+                      continuação direta do primeiro jogo.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://64.media.tumblr.com/3ec36de6184095ee6cba9a87c9970e0f/tumblr_psfe2m4RCP1vgq995o2_250.gifv" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Jogabilidade</h5>
+                    <p class="card-text">O que era bom no primeiro, pode melhorar ainda mais no segundo jogo, a imersão na história e o combate beirando a perfeição é um marco na sua ge
+                      ração de console e na época em que foi lançado.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://garotanocontrole.com.br/wp-content/uploads/2021/07/download-1.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Jogabilidade part.2</h5>
+                    <p class="card-text">Deve ser comentado a respeito que não é apenas um jogo violento, existem até puzzles 
+                      em determinados momentos do jogo além de grandes challenges
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center  mt-4 mb-4">2.Gta San Andreas
+              </div>
+              <div class="card-group text-center">
+                <div class="card ms-4">
+                  <img src="https://2.bp.blogspot.com/-lQDO9SESsVg/UIQEUtbOVyI/AAAAAAAACVM/DBJXCskueuw/s1600/GTASA.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Gta San Andreas-Plastation 2</h5>
+                    <p class="card-text">Era de se esperar esse jogo nessa lista, não é preciso falar muito dele já que provavelmente o mundo todo conhece...
+                      O maior gta já feito e o maior divertimento de uma geração inteira por anos...até foi criado um multiplayer pelos próprios jogadores
+                    </p>
+
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://media.tenor.com/VE8xU131DakAAAAC/gta-sa-gta-san-andreas.gif" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Jogabilidade</h5>
+                    <p class="card-text">O que já era de se impressionar na época, ainda nos dias atuais é algo grandioso, a posssibilidade de nadar,
+                    pilotar um avião, um caça, até mesmo um tanque, o jogador possuir folego, massa muscular, tudo isso em um mesmo jogo é algo marcante para todo sempre .</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://superbombapatch.com/cdn/shop/products/GTA_Batman_Ville_1024x1024@2x.jpg?v=1623617782" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Mods</h5>
+                    <p class="card-text">Quem nunca foi no loja do lado e viu essa versão do gta? Isso se deve pelo sucesso do jogo além da comunidade criando 
+                      diversos mods, o Gta San Andreas até hoje possui uma comunidade ativa, o que é bastante pra um jogo de 2004. </p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center  mt-4 mb-4">3.Spider-man friend or foe  </div>
+              
+              <div class="card-group text-center">
+                <div class="card ms-4">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUdAvsoyFfiW3Tlmk4fQs4JpZ8YhBjejtlSH-wHRgzcJideQUF_A57bEV95XEiYcwECPQ4JAkZnVX9rqTWNjNYwc2EJGHWTG869j2OSUqbXRdNmvbNO8xHmqazDsStmyJrNioqgm5j90gGx0Uf7QEmcsbqEIVOUH5jnUp8nGggrS_1_Wc_1mFEgYwG/s2120/Spider%20Man%20Friend%20Or%20Foe.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Spider-man friend or foe-Playstation 2</h5>
+                    <p class="card-text">Esse era um daqueles incríveis jogos para jogar com o amigo, imagina derrotar todos grandes vilões do homem aranha 
+                      em cooperativo.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://pa1.aminoapps.com/6345/704b346779e4789b414fe8bcb077421f89ad49b5_hq.gif" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Gameplay</h5>
+                    <p class="card-text">A mecânica simples e com poucos recursos era divertida para época e sufuciente 
+                      para o divertimento, claro que todos queriam socar o quadrado ou o bola sem saber os combos, então a jogabilidade em si não era tão importante
+                      para duas crianças.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://eu2.contabostorage.com/2baf1d556e44458999c03b1595ea080b:ag.eu.1.250/media/spider-man-friend-or-foe/14.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Gráficos</h5>
+                    <p class="card-text">Pra um jogo de playstation 2 em 2007, nada a reclamar, apenas elógios pelo desing e caracteristica própria
+                      de cada personagem do quadrinho para o jogo.
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center  mt-4 mb-4">4.God of War</div>
+              
+              <div class="card-group text-center">
+                <div class="card ms-4">
+                  <img src="https://capascatalogadas.files.wordpress.com/2011/11/god-of-war-1_capa02.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">God Of War</h5>
+                    <p class="card-text">Um guerreiro espartano faz um jaramento com Ares para salva-lo dos seus inimigos, o que poderia dar errado? 
+                    Somente um dos maiores jogos já lançados, God Of War traz tudo de melhor para dentro de um jogo.
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://thumbs.gfycat.com/TidyTestyCavy-size_restricted.gif" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Gameplay</h5>
+                    <p class="card-text">Sangue, sangue e mais sangue...a mecânica de combate é digna de uma nota 10, ainda mais para 2005, além do sistema de de luta existem inúmeras coisas 
+                      para se fazer no jogo como explorar o cenário em busca de orbes de vida, ou até mini puzzles.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://gamesthatiplay.files.wordpress.com/2012/04/11.jpg?w=1600&h=768&crop=1" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Gráficos</h5>
+                    <p class="card-text">Impecável, sem sombra de dúvidas mudou o cenário de games, cada detalhe do jogo te deixa mais surpreendido de como
+                      ele foi lançado para plastation 2 e não o 3.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <span class="badge bg-primary rounded-pill">14</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-start mb-4">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold text-center  mt-4 mb-4">5.Resident evil 4</div>
+              
+              <div class="card-group text-center">
+                <div class="card ms-4">
+                  <img src="https://2.bp.blogspot.com/-CxmcPT-f-qY/WLGanI1pP4I/AAAAAAAAExA/1XhlfhejxXssGm0r47TP6arbhLqO3xTUACLcB/s0/resident-evil-4_capa01.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Resident evil 4</h5>
+                    <p class="card-text">E para finalizar, um dos maiores jogos feitos pela querida CAPCOM, a marcante Ashley pedindo ajuda para nosso héroi
+                      Leon, o grande cachorro do ínicio em que podemos salva-lo, partes aterrorizantes e uma ótima trilha sonora.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://24.media.tumblr.com/9e31a252c95aa77ba089c1066c11392e/tumblr_mjfbgozQdu1s3qjhfo1_500.gif" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Gameplay</h5>
+                    <p class="card-text">Para sua época(2005), existem coisas que são hoje bem datadas, como a impossibilade de virar pra trás enquanto mira 
+                    , de cancelamento de reload, porém para o seu tempo acredito qué um dos melhores sistemas de combate criado e uma grande mudança visual para seu atencessor(Resident evil 3).</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card ms-4" >
+                  <img src="https://static1-br.millenium.gg/articles/9/13/82/9/@/151322-re-4-remake-article_cover_bd-1.jpg" class="card-img-top" 
+                  height="400px" width="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Resident Evil 4 Remake</h5>
+                    <p class="card-text">"O remake de Resident Evil 4 é a aventura mais implacavelmente emocionante da série, reconstruída, refinada e realizada em toda a extensão de seu enorme potencial."<br>
+                      Masterpiece,IGN
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <span class="badge bg-primary rounded-pill">140</span>
+          </li>
+        </ul>
+
+      </p>
+    </div>
+  </main>   
+    <!-----------------------------------------------------------------Aqui é o fim do Scrollspy e do conteúdo principal---------------------------------------------------------------------------------------------->
+
+    <!--------------------------------------------------------------------------------------Aqui é o footer----------------------------------------------------------------------------------->
+      <div class="container.fluid.container-fluid"></div>
+      <footer class="position-absolute top-1080 start-50 translate-middle mt-4">
+        <h6>Thank you so much for visit my web site. I hope its send you a message of happy and nostalgic.</h6>
+        <span>&COPY; Giulian Fabio Bastos Amorim Lima, 2023 -Todos os direitos reservados. </span>
+      </footer>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-----------------------------------------------------------------Aqui é o fim do footer e do projeto------------------------------------------------------------------------->
+<!--------------------------------------------Aqui é sobre o desenvolvimento de tópicos com bootstrap-----------
+
+   <div class="container.fluid.container-fluid text-center">
+
+        <div class="row">
+            <div class="col">
+              1 of 2
+            </div>
+            <div class="col">
+              2 of 2
+            </div>
+
+            <div class="col">
+                3 of 3
+            </div>
+      
+          <div class="col">
+            Giulian
+          </div>
+      </div>
+-->
+
+<!-----Botão genérico que acabei fazendo(vale a pena lembrar que o comando mb-4 serve para espaçamento(ELE VAI DAR ESPAÇAMENTO ATÉ ONDE A LARGURA 
+  E ALTURA DELE PERMITIR, PRA MAIS ESPAÇAMENTO AUMENTE O HEIGHT E WIDHT))
+
+<button type="action" class="btn btn-outline-info mb-4" >Obter Link</button><br>
+-->
+
+<!----------Uma tabela que acabei criandohttps://upload.wikimedia.org/wikipedia/pt/2/2e/New_Super_Mario_Bros._-_Norh-american_cover.jpg.-----------
+  <div class="table-responsive">
+
+  <table class="table table-primary table-striped table-hover table-borderless mb-4 table-group-divider caption-top" style="height: 200px; width: 450px;">
+    <caption>Os 3 carros mais rápidos do mundo</caption>
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Carro</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Giulian</td>
+          <td>Giulian</td>
+          <td>Giulian</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Giulian</td>
+          <td>Giulian</td>
+          <td>Giulian</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Giulian</td>
+          <td>Giulian</td>
+          <td>Giulian</td>
+        </tr>
+      </tbody>
+  </table>
+
+</div>
+-->
